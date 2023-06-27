@@ -1,0 +1,125 @@
+$color_2: #050510;
+
+@media screen and (max-width: 768px) {
+    .heading {
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+    }
+    .container {
+        padding: 0px;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about_content {
+        font-size: 16px;
+        text-align: center;
+        
+        .read_more {
+            font-size: 16px;
+        }
+    }
+}
+
+.background {
+  color: var(--text-color);
+  width: auto;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+        font-size: 50px;
+        color: var(--text-color);
+        margin-bottom: 25px;
+    }
+    h1::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: #535a53;
+    }
+    
+    p {
+        font-size: 18px;
+        color: var(--subtext-color);
+        margin-bottom: 35px;
+    }
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.dms_image{
+    flex: 1;
+
+    img {
+        max-width: 90%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+}
+.dms_image:hover img{
+    transform: scale(1.02);
+}
+.about_content {
+    flex: 1;
+
+    h2 {
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: var(--text-color);
+    }
+    
+    p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: var(--subtext-color);
+        
+        b {
+            text-decoration: underline;
+            color: #934caf;
+        }
+    }
+    
+    .read_more {
+        display: inline-block;
+        padding: 10px 20px;
+        color: #fff;
+        font-size: 19px;
+        border-radius: 25px;
+        margin-top: 15px;
+        transition: 0.3s ease;
+        background-color: #934caf;
+
+        &:hover {
+            background-color: #7b3e8e;
+        }
+    }
+}

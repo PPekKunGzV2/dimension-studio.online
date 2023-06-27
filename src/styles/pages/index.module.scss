@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: auto;
+  height: 100vh;
+  max-width: 100%;
+}
+.logo_dms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+  .img {
+    margin-top: 160px;
+    animation: pluse 3s ease infinite;
+    z-index: 1;
+  }
+}
+.mouse_scroll {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+    .svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@keyframes pluse {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    55% {
+        transform: scale(1.1, 1.1);
+    }
+}
