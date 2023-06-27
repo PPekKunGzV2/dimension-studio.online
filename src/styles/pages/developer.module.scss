@@ -31,7 +31,7 @@ $font-family_1: "Poppins", sans-serif;
 }
 .container {
 	min-height: 100vh;
-	background: #1f2028;
+	//background: #1f2028;
 }
 .main {
 	display: flex;
@@ -67,7 +67,7 @@ $font-family_1: "Poppins", sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 60px;
+	gap: 30px;
 }
 .profile_card {
 	display: flex;

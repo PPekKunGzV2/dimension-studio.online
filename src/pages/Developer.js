@@ -193,7 +193,7 @@ export default function About() {
                 </div>
               </div>
               <div className={styles.about}>
-                Social Media / Fanpage Anoucements
+                Social Media / Fanpage
               </div>
               <div className={styles.social_icons}>
                 <a
@@ -214,6 +214,59 @@ export default function About() {
                 </a>
                 <a
                   href="https://twitter.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.tw}
+                >
+                  <Twitter style={{ color: "#00acee", fontSize: "36px" }} />
+                </a>
+              </div>
+              {/* <div className={styles.buttons}>
+                <Button text="FOLLOWS" link="https://github.com/Novaritia" />
+                <Button
+                  text="CONTRACT"
+                  link="https://discord.com/users/554852570330562560"
+                />
+              </div> */}
+            </div>
+          </div>
+          <div className={styles.profile_card} id="#5">
+            <div className={styles.wrapper}>
+              <div className={styles.img_area}>
+                <div className={styles.inner_area}>
+                  <img src="./developer/04.jpg" alt="@PPekKunGzDev" />
+                </div>
+              </div>
+              <div className={styles.name}>
+                <div className={styles.test}>
+                  @PPekKunGzDev
+                  <Verified
+                    style={{ alignItems: "center", color: "limegreen" }}
+                  />
+                </div>
+              </div>
+              <div className={styles.about}>
+                Developer | Proxy Manager | Firewall
+              </div>
+              <div className={styles.social_icons}>
+                <a
+                  href="https://github.com/PPekKunGz"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.fb}
+                >
+                  <GitHub style={{ color: "BLACk", fontSize: "36px" }} />
+                </a>
+                <a
+                  href="https://www.youtube.com/@ppekkungzchannel"
+                  target="_blank"
+                  rel="noreferrer"
+                  className={styles.yt}
+                >
+                  <YouTube style={{ color: "red", fontSize: "36px" }} />
+                </a>
+                <a
+                  href="https://twitter.com/PPekKunGzDev"
                   target="_blank"
                   rel="noreferrer"
                   className={styles.tw}

@@ -9,21 +9,23 @@ import BookIcon from '@mui/icons-material/Book';
 import BusinessIcon from '@mui/icons-material/Business';
 import Sun from '@mui/icons-material/LightMode';
 import Moon from '@mui/icons-material/DarkMode';
-
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Navbar() {
   const { resolvedTheme, theme, setTheme } = useTheme()
 
   return (
     <header className={header.header}>
-      <a href="/" className={header.logo}>
-        <img src="/img/dms_logo.svg" />DIMENSION</a>
-      <div className={header.group}>
-        <ul className={header.nav}>
-          <li><Link href="/"><HomeIcon color="secondary" />HOME</Link></li>
-          <li><Link href="/Content"><FactCheckIcon color="secondary" />CREATION</Link></li>
-          <li><Link href="/About"><BookIcon color="secondary" />ABOUT</Link></li>
-          <li><Link href="/Developer"><BusinessIcon color="secondary" />DEVELOPER</Link></li>
+      <Link href="/" className={header.logo}>
+        <img src="/img/dms_logo.svg" />DIMENSION</Link>
+      <input type="checkbox" id="toggler" />
+      <label for="toggler"><MenuIcon/></label>
+      <div className={header.menu}>
+        <ul className={header.list}>
+          <li><Link href="/">Home</Link></li>
+          <li><Link href="/">Content</Link></li>
+          <li><Link href="/">About</Link></li>
+          <li><Link href="/">Developer</Link></li>
           <button
             onClick={() => {
               setTheme(resolvedTheme === "light" ? "dark" : "light");
@@ -32,7 +34,7 @@ function Navbar() {
             className={header.thememode}
           >
             {theme === "light" ? <Moon /> : <Sun />}
-          </button>
+      </button>
         </ul>
       </div>
     </header>
